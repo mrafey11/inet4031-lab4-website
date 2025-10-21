@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Ahmed Khalid Lightbulb Webpage</title>
+  <style>
+    body {
+      background-color: #e6f7ff; /* light blue background */
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      color: #003366;
+    }
+    button {
+      font-size: 18px;
+      margin: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
 <body>
-
-<h2>Simple Web Page with HTML and JavaScript</h2>
-
-<p>JavaScript can change HTML attribute values.</p>
-
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
+  <h1>Welcome to Ahmed Khalid Interactive Lightbulb Page 💡</h1>
+  <p>This page demonstrates how JavaScript can control HTML elements — click a button to turn the light on or off!</p>
+  
+  <img id="myImage" src="pic_bulboff.gif" style="width:200px"><br><br>
+  
+  <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On</button>
+  <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off</button>
+  
+  <p>Created by <strong>Ahmad Khalid</strong> — Lab 4 Project</p>
 </body>
 </html>
